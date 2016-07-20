@@ -1,12 +1,14 @@
 require_relative 'player'
 
 class Game
-  def attack(player)
-    deduct_hp(player)
+  attr_reader :player_1, :player_2
+
+  def initialize(player_1, player_2)
+    @player_1 = player_1
+    @player_2 = player_2
   end
 
-  private
-  def deduct_hp(player)
-    player.hit_points -= 10
+  def attack(player)
+    player.deduct_hp
   end
 end

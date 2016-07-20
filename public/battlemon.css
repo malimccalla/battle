@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'pokemon';
-  src: url('/fonts/Pokemon_Hollow.ttf') format('truetype');
-}
-
 body {
   font-family: 'pokemon', sans-serif;
   width: 500px;
@@ -20,7 +15,7 @@ body.play_page {
 }
 
 h1 {
-  color:red font-family: 'pokemon';
+  color:red
 }
 
 #submit {
