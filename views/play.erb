@@ -1,5 +1,16 @@
-<%= @game.player_1.name %> vs. <%= @game.player_2.name %>
-<br>
-<%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP - <%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP
-<br>
-<a href="/attack">Attack!</a>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"
+  type='text/css'>
+  <link rel='stylesheet' href='battlemon.css' media='screen' title='no title' charset='utf-8'>
+</head>
+
+<img class = player_2_battlemon src="http://i.makeagif.com/media/6-08-2014/igaRKU.gif">
+
+<body class="play_page">
+  <title> Battle! </title>
+  <%= @game.player_1.name %> vs. <%= @game.player_2.name %>
+  <br>
+  <%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP - <%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP
+  <br>
+  <a href="/attack">Attack!</a>
+</body>

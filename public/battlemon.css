@@ -1,23 +1,28 @@
-body {
-  font-family: 'pokemon', sans-serif;
-  width: 500px;
+body.index_page {
+  font-family: 'Orbitron', sans-serif;
+  width: 1000px;
   margin: 30px auto;
   text-align: center;
-}
-
-body.index_page {
-  background: url(http://i.giphy.com/bqrSWsK94zdpS.gif) no-repeat center center;
+  background: url(http://i.giphy.com/V4sY8JCTxGyaI.gif) no-repeat center center;
   background-size: cover;
 }
 
+/*section.title {
+
+}*/
+
+section.name_form {
+
+}
+
 body.play_page {
-  background: url(https)
+  background: url(https://i.imgur.com/ce7Hb.png) no-repeat; center center;
+  background-size: cover;
 }
 
-h1 {
-  color:red
-}
-
-#submit {
-  margin-top: 15px;
+img.player_2_battlemon {
+  position: fixed;
+  right: 300;
+  height: 400px;
+  width: 320px;
 }

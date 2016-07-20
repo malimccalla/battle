@@ -5,19 +5,24 @@
 </head>
 
 <body class = "index_page">
-  <h1>Battlemon!</h1>
-  <h2>Gotta catch most of them...</h2>
-  <br>
-  <h3>Sign in to play</h3>
-  <form action="/names" method="post">
-    <label for="player_1_name">
-      Player 1 name
-      <input type="text" name="player_1_name">
-    </label>
-    <label for="player_1_name">
-      Player 2 name
-      <input type="text" name="player_2_name">
-    </label>
-    <input type="submit" value="Submit">
-  </form>
+  <title>Battlemon!</title>
+  <section class="title">
+    <h1 style="color:red;">Battlemon!</h1>
+    <h2>Gotta catch most of them...</h2>
+    <h3>Sign in to play</h3>
+  </section>
+
+  <section class="name_form">
+    <form action="/names" method="post">
+      <label for="player_1_name"> Player 1 name
+        <input type="text" name="player_1_name">
+      </label>
+
+      <label for="player_2_name"> Player 2 name
+        <input type="text" name="player_2_name">
+      </label>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
 </body>
