@@ -2,8 +2,8 @@ require 'game'
 
 describe Game do
   subject(:game) { described_class.new(player_1, player_2) }
-  let(:player_1) { double :player }
-  let(:player_2) { double :player }
+  let(:player_1) { double :player_1 }
+  let(:player_2) { double :player_2 }
 
   describe '#attack' do
     it 'damages player' do
@@ -12,9 +12,16 @@ describe Game do
     end
   end
 
-  describe '#current_player' do
-    it 'should returns the current player' do
-      expect(game.current_player).to eq player_1
+  describe '#attacker' do
+    it 'should returns the attacker' do
+      expect(game.attacker).to eq player_1
+    end
+  end
+
+  describe '#change_player' do
+    it 'should change the attacker' do
+      game.change_player
+      expect(game.attacker).to eq player_2
     end
   end
 end

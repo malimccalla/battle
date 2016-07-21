@@ -20,7 +20,8 @@ class Battlemon < Sinatra::Base
 
   get '/attack' do
     @game = $game
-    @game.attack(@game.player_2)
+    @game.attack(@game.victim)
+    # @game.change_player
     erb :attack
     # redirect '/play'
   end
