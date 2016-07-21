@@ -13,6 +13,7 @@ body.index_page {
 
 h1.message {
   color: red;
+  text-align: center;
 }
 
 section.name_form {
@@ -29,4 +30,9 @@ a {
   color: red;
   text-decoration: none;
   border: 1px solid red;
+}
+
+img.missed_gif {
+  position: relative;
+  left: 45em;
 }

@@ -18,5 +18,8 @@
     <%=@game.attacker.name %> took <%=@game.attacker.damage %> damage!
   <% end %>
   <br>
-  <h1 class="message"><%=@game.damage_message %></h1>
+  <h1 class="message"><%=@game.damage_message(@game.attacker.damage) %></h1>
+  <% if @game.attacker.damage == 0 %>
+    <img class="missed_gif" src="http://24.media.tumblr.com/34bd73e91dc2b703101c00e24da1cb66/tumblr_mu2qlg4VTO1rey868o1_500.gif" alt="missed" />
+  <% end %>
 </body>

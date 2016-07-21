@@ -19,19 +19,16 @@ class Game
     @attacker = new_attacker(@attacker)
   end
 
-  def damage_message
-    if @attacker.damage
-      if @attacker.damage == 0
-        return "#{@victim.name} missed!"
-      elsif @attacker.damage == 10
-        return "SPECIAL ATTACK!!"
-      elsif @attacker.damage >= 8
-        return "Super effective!"
-      elsif @attacker.damage <= 3
-        return "Not very effective!"
-      end
+  def damage_message(damage)
+    case damage
+    when 0     then return "#{@victim.name} missed!"
+    when 10    then return "SPECIAL ATTACK!!"
+    when 8,9   then return "Super effective!"
+    when 1,2,3 then return "Not very effective!"
     end
   end
+
+
 
   private
   def new_attacker(attacker)

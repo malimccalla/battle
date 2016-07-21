@@ -12,6 +12,10 @@ class Player
     @hit_points -= @damage
   end
 
+  def dead?
+    @hit_points <= 0
+  end
+
   private
   def calculate_damage
     @damage = rand(11)
