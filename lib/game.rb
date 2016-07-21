@@ -19,6 +19,12 @@ class Game
     @attacker = new_attacker(@attacker)
   end
 
+  def game_over_message
+    if @victim.dead?
+      "#{@victim.name} loses!"
+    end
+  end
+
   def damage_message(damage)
     case damage
     when 0     then return "#{@victim.name} missed!"
@@ -27,8 +33,6 @@ class Game
     when 1,2,3 then return "Not very effective!"
     end
   end
-
-
 
   private
   def new_attacker(attacker)

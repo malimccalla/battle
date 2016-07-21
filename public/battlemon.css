@@ -16,14 +16,15 @@ h1.message {
   text-align: center;
 }
 
-section.name_form {
-
+.attack_button {
+  font-size: 3rem;
 }
 
 body.play_page {
   background: url(https://i.imgur.com/ce7Hb.png) no-repeat; center center;
   background-size: cover;
   color: white;
+  text-align: center;
 }
 
 a {
