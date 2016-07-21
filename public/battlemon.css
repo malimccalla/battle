@@ -18,11 +18,11 @@ section.name_form {
 body.play_page {
   background: url(https://i.imgur.com/ce7Hb.png) no-repeat; center center;
   background-size: cover;
+  color: white;
 }
 
-img.player_2_battlemon {
-  position: fixed;
-  right: 300;
-  height: 400px;
-  width: 320px;
+a {
+  color: red;
+  text-decoration: none;
+  border: 1px solid red;
 }
