@@ -12,4 +12,16 @@ describe Game do
     end
   end
 
+  describe '#player_1' do
+    it 'returns the first player' do
+      expect(game.player_1).to eq player1
+    end
+  end
+
+  describe '#player_2' do
+    it 'returns the first player' do
+      expect(game.player_2).to eq player2
+    end
+  end
+
 end
