@@ -21,7 +21,6 @@ class Battlemon < Sinatra::Base
   post '/attack' do
     @game = $game
     @game.attack(@game.victim)
-    # @game.change_player
     redirect '/play'
   end
 

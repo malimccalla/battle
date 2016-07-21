@@ -14,4 +14,9 @@
     <input type="submit" value='Attack <%= @game.victim.name%>!'>
   </form>
 
+  <% if @game.attacker.damage %>
+    <%=@game.attacker.name %> took <%=@game.attacker.damage %> damage!
+  <% end %>
+  <br>
+  <h1 class="message"><%=@game.damage_message %></h1>
 </body>

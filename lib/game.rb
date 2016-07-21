@@ -19,6 +19,20 @@ class Game
     @attacker = new_attacker(@attacker)
   end
 
+  def damage_message
+    if @attacker.damage
+      if @attacker.damage == 0
+        return "#{@victim.name} missed!"
+      elsif @attacker.damage == 10
+        return "SPECIAL ATTACK!!"
+      elsif @attacker.damage >= 8
+        return "Super effective!"
+      elsif @attacker.damage <= 3
+        return "Not very effective!"
+      end
+    end
+  end
+
   private
   def new_attacker(attacker)
     @players.select { |player| player != attacker }.first

@@ -11,6 +11,10 @@ body.index_page {
 
 }*/
 
+h1.message {
+  color: red;
+}
+
 section.name_form {
 
 }
