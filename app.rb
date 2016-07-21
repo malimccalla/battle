@@ -1,4 +1,5 @@
 require './lib/game'
+require './lib/player'
 require 'sinatra/base'
 
 class Battlemon < Sinatra::Base
@@ -21,10 +22,7 @@ class Battlemon < Sinatra::Base
     @game = $game
     @game.attack(@game.player_2)
     erb :attack
-  end
-
-  get '/battle' do
-    erb :battle
+    # redirect '/play'
   end
 
   # start the server if ruby file executed directly
