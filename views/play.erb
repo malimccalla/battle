@@ -6,9 +6,9 @@
 
 <body class="play_page">
   <title> Battle! </title>
-  <%= @game.player_1.name %> vs. <%= @game.player_2.name %>
+  <%= @game.players.first.name %> vs. <%= @game.players.last.name %>
   <br>
-  <%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP - <%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP
+  <%= @game.players.first.name %>: <%= @game.players.first.hit_points %>HP - <%= @game.players.last.name %>: <%= @game.players.last.hit_points %>HP
   <br>
   <%= @game.attacker.name %> - <a href="/attack">Attack!</a>
 </body>

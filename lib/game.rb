@@ -1,11 +1,10 @@
 require_relative 'player'
 
 class Game
-  attr_reader :player_1, :player_2, :attacker, :victim
+  attr_reader :players, :attacker, :victim
 
   def initialize(player_1, player_2)
-    @player_1 = player_1
-    @player_2 = player_2
+    @players = [player_1, player_2]
     @attacker = player_1
     @victim = player_2
   end
@@ -15,12 +14,12 @@ class Game
   end
 
   def change_player
-    if @attacker == @player_1
-      @attacker = @player_2
-      @victim = @player_1
-    else
-      @attacker = @player_1
-      @victim = @player_2
-    end
+    @victim = @attacker
+    @attacker = new_attacker(@attacker)
+  end
+
+  private
+  def new_attacker(attacker)
+    @players.select { |player| player != attacker }.first
   end
 end

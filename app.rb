@@ -21,9 +21,8 @@ class Battlemon < Sinatra::Base
   get '/attack' do
     @game = $game
     @game.attack(@game.victim)
-    # @game.change_player
+    @game.change_player
     erb :attack
-    # redirect '/play'
   end
 
   # start the server if ruby file executed directly
