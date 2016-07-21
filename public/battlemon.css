@@ -1,30 +1,60 @@
 body.index_page {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Press Start 2P', 'cursive';
   width: 1000px;
   margin: 30px auto;
   text-align: center;
   background: url(http://i.giphy.com/V4sY8JCTxGyaI.gif) no-repeat center center;
   background-size: cover;
+  font-family: 'Press Start 2P', 'cursive';
+  font-size: 1rem;
 }
 
 /*section.title {
 
 }*/
 
+.title {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.catchem {
+  padding-bottom: 1rem;
+}
+
 h1.message {
   color: red;
   text-align: center;
 }
 
+.vs {
+  padding-bottom: 11rem;
+  padding-bottom: 3rem;
+  font-size: 3rem
+}
+
 .attack_button {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 body.play_page {
-  background: url(https://i.imgur.com/ce7Hb.png) no-repeat; center center;
+  background: url(https://images3.alphacoders.com/273/273289.jpg) no-repeat; center center;
   background-size: cover;
   color: white;
   text-align: center;
+  font-family: 'Press Start 2P', 'cursive';
+}
+
+.input {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 a {
@@ -35,5 +65,4 @@ a {
 
 img.missed_gif {
   position: relative;
-  left: 45em;
 }

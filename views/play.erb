@@ -1,22 +1,24 @@
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"
-  type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
   <link rel='stylesheet' href='battlemon.css' media='screen' title='no title' charset='utf-8'>
+
 </head>
 
-<body class="play_page">
+<body class="play_page" style='Press Start 2P'>
   <title> Battle! </title>
-  <%= @game.players.first.name %> vs. <%= @game.players.last.name %>
+
+  <div class="vs">
+    <%= @game.players.first.name %> vs. <%= @game.players.last.name %>
+  </div>
   <br>
-  <%= @game.players.first.name %>: <%= @game.players.first.hit_points %>HP - <%= @game.players.last.name %>: <%= @game.players.last.hit_points %>HP
+  <div class="hitpoints">
+    <%= @game.players.first.name %>: <%= @game.players.first.hit_points %>HP - <%= @game.players.last.name %>: <%= @game.players.last.hit_points %>HP
+  </div>
   <br>
   <form action="/attack" class='attack_button' method="post">
     <input type="submit" value='Attack <%= @game.victim.name%>!'>
   </form>
-
-  <% if @game.attacker.dead? %>
-    <%= @game.attacker.name.capitalize %> LOSES
-  <% end %>
 
   <% if @game.attacker.damage %>
     <%=@game.attacker.name %> took <%=@game.attacker.damage %> damage!
