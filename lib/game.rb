@@ -11,6 +11,7 @@ class Game
 
   def attack(player)
     player.deduct_hp
+    change_player
   end
 
   def change_player

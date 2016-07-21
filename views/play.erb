@@ -10,5 +10,8 @@
   <br>
   <%= @game.players.first.name %>: <%= @game.players.first.hit_points %>HP - <%= @game.players.last.name %>: <%= @game.players.last.hit_points %>HP
   <br>
-  <%= @game.attacker.name %> - <a href="/attack">Attack!</a>
+  <form action="/attack" class='attack_button' method="post">
+    <input type="submit" value='Attack <%= @game.victim.name%>!'>
+  </form>
+
 </body>
